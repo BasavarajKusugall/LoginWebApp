@@ -11,11 +11,11 @@ pipeline {
         // This can be http or https
         NEXUS_PROTOCOL = "http"
         // Where your Nexus is running
-        NEXUS_URL = "65.2.189.169:8081"
+        NEXUS_URL = "192.168.45.75:8081"
         // Repository where we will upload the artifact
-        NEXUS_REPOSITORY = "LoginWebApp"
+        NEXUS_REPOSITORY = "sample-uploader"
         // Jenkins credential id to authenticate to Nexus OSS
-        NEXUS_CREDENTIAL_ID = "nexusCredential"
+        NEXUS_CREDENTIAL_ID = "62439df4-a664-489b-8f13-c727b46f526e"
         ARTIFACT_VERSION = "${BUILD_NUMBER}"
     }
 
@@ -23,7 +23,7 @@ pipeline {
         stage("Check out") {
             steps {
                 script {
-                    git branch: 'feature/nexusUpload', url: 'https://github.com/ranjit4github/LoginWebApp.git';
+                    git branch: 'feature/nexusUpload', url: 'https://github.com/BasavarajKusugall/LoginWebApp.git';
                 }
             }
         }
@@ -82,7 +82,7 @@ pipeline {
             }
             steps{
                 script {
-                    git branch: 'feature/ansibleNexus', url: 'https://github.com/ranjit4github/Ansible_Demo_Project.git';
+                    git branch: 'feature/ansibleNexus', url: 'https://github.com/BasavarajKusugall/LoginWebApp.git';
                 }
                 sh '''
                     ansible-playbook -e vers=${BUILD_NUMBER} roles/site.yml
