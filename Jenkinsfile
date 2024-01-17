@@ -27,15 +27,6 @@ pipeline {
                 }
             }
         }
-
-        stage("mvn build") {
-            steps {
-                script {
-                    sh "mvn clean package"
-                }
-            }
-        }
-
         stage("publish to nexus") {
             steps {
                 script {
