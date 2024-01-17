@@ -76,18 +76,6 @@ pipeline {
                 }
             }
         }
-        stage ('Execute Ansible Play - CD'){
-            agent {
-                label 'ansible'
-            }
-            steps{
-                script {
-                    git branch: 'feature/ansibleNexus', url: 'https://github.com/BasavarajKusugall/LoginWebApp.git';
-                }
-                sh '''
-                    ansible-playbook -e vers=${BUILD_NUMBER} roles/site.yml
-                '''
-            }
-        }
+        
     }
 }
