@@ -1,0 +1,6 @@
+/Users/basavaraj.kusugall/workspace/poc/nexus-aem/core/src/test/java/com/mysite/core/servlets/SimpleServletTest.java
+/Users/basavaraj.kusugall/workspace/poc/nexus-aem/core/src/test/java/com/mysite/core/schedulers/SimpleScheduledTaskTest.java
+/Users/basavaraj.kusugall/workspace/poc/nexus-aem/core/src/test/java/com/mysite/core/listeners/SimpleResourceListenerTest.java
+/Users/basavaraj.kusugall/workspace/poc/nexus-aem/core/src/test/java/com/mysite/core/filters/LoggingFilterTest.java
+/Users/basavaraj.kusugall/workspace/poc/nexus-aem/core/src/test/java/com/mysite/core/testcontext/AppAemContext.java
+/Users/basavaraj.kusugall/workspace/poc/nexus-aem/core/src/test/java/com/mysite/core/models/HelloWorldModelTest.java

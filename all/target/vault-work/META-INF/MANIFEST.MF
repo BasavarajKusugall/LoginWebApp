@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: My Site - All
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: container
+Content-Package-Id: com.mysite:mysite.all:1.0.0-SNAPSHOT
+Content-Package-Description: All content package for My Site
+Content-Package-Roots: /apps/mysite-packages,/apps/mysite-vendor-package
+ s
+

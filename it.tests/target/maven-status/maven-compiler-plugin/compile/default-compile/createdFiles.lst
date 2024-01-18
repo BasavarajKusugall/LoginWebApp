@@ -1,0 +1,4 @@
+com/mysite/it/tests/GetPageIT.class
+com/mysite/it/tests/HtmlUnitClient.class
+com/mysite/it/tests/PublishPageValidationIT.class
+com/mysite/it/tests/CreatePageIT.class
